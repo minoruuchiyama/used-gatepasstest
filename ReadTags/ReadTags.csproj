@@ -170,7 +170,6 @@
     <Compile Include="Exceptions\Http400BadRequestException.cs" />
     <Compile Include="Exceptions\Http404NotFoundException.cs" />
     <Compile Include="Helpers\FileSystemHelper.cs" />
-    <Compile Include="Models\ServerSideModels\ReadTagsWaitModel.cs" />
     <Compile Include="Models\ServerSideModels\ReadTagsModel.cs" />
     <Compile Include="Models\ServerSideModels\ServerSideModel.cs" />
     <Compile Include="Models\WebServerModel.cs" />

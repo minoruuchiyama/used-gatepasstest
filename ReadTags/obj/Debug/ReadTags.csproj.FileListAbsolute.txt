@@ -1,4 +1,6 @@
 C:\works\readtags\ReadTags\bin\Debug\ReadTags.exe.config
+C:\works\readtags\ReadTags\bin\Debug\ReadTags.exe.manifest
+C:\works\readtags\ReadTags\bin\Debug\ReadTags.application
 C:\works\readtags\ReadTags\bin\Debug\ReadTags.exe
 C:\works\readtags\ReadTags\bin\Debug\ReadTags.pdb
 C:\works\readtags\ReadTags\bin\Debug\CommonServiceLocator.dll
@@ -35,6 +37,7 @@ C:\works\readtags\ReadTags\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\works\readtags\ReadTags\bin\Debug\System.ValueTuple.xml
 C:\works\readtags\ReadTags\bin\Debug\Unity.Abstractions.pdb
 C:\works\readtags\ReadTags\bin\Debug\Unity.Container.pdb
+C:\works\readtags\ReadTags\obj\Debug\ReadTags.csprojAssemblyReference.cache
 C:\works\readtags\ReadTags\obj\Debug\Views\AboutBoxWindow.g.cs
 C:\works\readtags\ReadTags\obj\Debug\App.g.cs
 C:\works\readtags\ReadTags\obj\Debug\ReadTags_MarkupCompile.cache
@@ -45,12 +48,9 @@ C:\works\readtags\ReadTags\obj\Debug\ReadTags.Views.NotifyIconWrapper.resources
 C:\works\readtags\ReadTags\obj\Debug\ReadTags.Properties.Resources.resources
 C:\works\readtags\ReadTags\obj\Debug\ReadTags.csproj.GenerateResource.cache
 C:\works\readtags\ReadTags\obj\Debug\ReadTags.csproj.CoreCompileInputs.cache
-C:\works\readtags\ReadTags\obj\Debug\ReadTags.csproj.CopyComplete
-C:\works\readtags\ReadTags\obj\Debug\ReadTags.exe
-C:\works\readtags\ReadTags\obj\Debug\ReadTags.pdb
-C:\works\readtags\ReadTags\bin\Debug\ReadTags.exe.manifest
-C:\works\readtags\ReadTags\bin\Debug\ReadTags.application
 C:\works\readtags\ReadTags\obj\Debug\ReadTags.TrustInfo.xml
 C:\works\readtags\ReadTags\obj\Debug\ReadTags.exe.manifest
 C:\works\readtags\ReadTags\obj\Debug\ReadTags.application
-C:\works\readtags\ReadTags\obj\Debug\ReadTags.csprojAssemblyReference.cache
+C:\works\readtags\ReadTags\obj\Debug\ReadTags.csproj.CopyComplete
+C:\works\readtags\ReadTags\obj\Debug\ReadTags.exe
+C:\works\readtags\ReadTags\obj\Debug\ReadTags.pdb
