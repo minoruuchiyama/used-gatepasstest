@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReactiveProperty.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Reactive.Bindings.Interactivity.Behavior`1">
+            <summary>
+            Behavior
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Reactive.Bindings.Interactivity.Behavior"/>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.Behavior`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.Interactivity.Behavior`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.Behavior`1.AssociatedObject">
+            <summary>
+            Gets the associated object.
+            </summary>
+            <value>The associated object.</value>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.Behavior">
+            <summary>
+            Behavior
+            </summary>
+            <seealso cref="T:Windows.UI.Xaml.DependencyObject"/>
+            <seealso cref="T:Microsoft.Xaml.Interactivity.IBehavior"/>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.Behavior.AssociatedObjectChanged">
+            <summary>
+            The associated object changed
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.Behavior.AssociatedObject">
+            <summary>
+            Gets the <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which the <seealso
+            cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> is attached.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.Behavior.AssociatedType">
+            <summary>
+            Gets the type of the associated.
+            </summary>
+            <value>The type of the associated.</value>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.Behavior.Attach(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Attaches to the specified object.
+            </summary>
+            <param name="associatedObject">
+            The <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which the <seealso
+            cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> will be attached.
+            </param>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.Behavior.Detach">
+            <summary>
+            Detaches this instance from its associated object.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.Behavior.OnAttached">
+            <summary>
+            Called when [attached].
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.Behavior.OnDetaching">
+            <summary>
+            Called when [detaching].
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.ConditionBehavior">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.ConditionBehavior.CompareOperatorProperty">
+            <summary>
+            The compare operator property
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.ConditionBehavior.CompareOperator">
+            <summary>
+            Gets or sets the compare operator.
+            </summary>
+            <value>The compare operator.</value>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.ConditionBehavior.Lhs">
+            <summary>
+            Gets or sets the LHS.
+            </summary>
+            <value>The LHS.</value>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.ConditionBehavior.LhsProperty">
+            <summary>
+            The LHS property
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.ConditionBehavior.Rhs">
+            <summary>
+            Gets or sets the RHS.
+            </summary>
+            <value>The RHS.</value>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.ConditionBehavior.RhsProperty">
+            <summary>
+            The RHS property
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.ConditionBehavior.OnAttached">
+            <summary>
+            Called when [attached].
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.ConditionBehavior.OnDetaching">
+            <summary>
+            Called when [detaching].
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.Op">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.Op.Eq">
+            <summary>
+            =
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.Op.GtEq">
+            <summary>
+            &gt;=
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.Op.Gt">
+            <summary>
+            &gt;
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.Op.LtEq">
+            <summary>
+            &lt;=
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.Op.Lt">
+            <summary>
+            &lt;
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.PreviewInvokeEventArgs">
+            <summary>
+            Preview Invoke EventArgs
+            </summary>
+            <seealso cref="T:System.EventArgs"/>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.PreviewInvokeEventArgs.Cancelling">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Reactive.Bindings.Interactivity.PreviewInvokeEventArgs"/> is cancelling.
+            </summary>
+            <value><c>true</c> if cancelling; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.TargetedTriggerAction`1">
+            <summary>
+            Targeted Trigger Action
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Reactive.Bindings.Interactivity.TargetedTriggerAction"/>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TargetedTriggerAction`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.Interactivity.TargetedTriggerAction`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TargetedTriggerAction`1.Target">
+            <summary>
+            Gets the target.
+            </summary>
+            <value>The target.</value>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.TargetedTriggerAction">
+            <summary>
+            </summary>
+            <seealso cref="T:Reactive.Bindings.Interactivity.TriggerAction"/>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.TargetedTriggerAction.TargetObjectProperty">
+            <summary>
+            The target object property
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TargetedTriggerAction.TargetType">
+            <summary>
+            Gets the type of the target.
+            </summary>
+            <value>The type of the target.</value>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TargetedTriggerAction.TargetObject">
+            <summary>
+            Gets or sets the target object.
+            </summary>
+            <value>The target object.</value>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TargetedTriggerAction.Target">
+            <summary>
+            Gets the target.
+            </summary>
+            <value>The target.</value>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TargetedTriggerAction.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.Interactivity.TargetedTriggerAction"/> class.
+            </summary>
+            <param name="targetType">Type of the target.</param>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.TriggerAction`1">
+            <summary>
+            Trigger Action
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Reactive.Bindings.Interactivity.TriggerAction"/>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerAction`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.Interactivity.TriggerAction`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TriggerAction`1.AssociatedObject">
+            <summary>
+            Gets the <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which the <seealso
+            cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> is attached.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.TriggerAction">
+            <summary>
+            TriggerAction
+            </summary>
+            <seealso cref="T:Reactive.Bindings.Interactivity.Behavior"/>
+            <seealso cref="T:Microsoft.Xaml.Interactivity.IAction"/>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.TriggerAction.IsEnabledProperty">
+            <summary>
+            The is enabled property
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TriggerAction.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance is enabled.
+            </summary>
+            <value><c>true</c> if this instance is enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerAction.Execute(System.Object,System.Object)">
+            <summary>
+            Executes the action.
+            </summary>
+            <param name="sender">
+            The <see cref="T:System.Object"/> that is passed to the action by the behavior. Generally
+            this is <seealso cref="P:Microsoft.Xaml.Interactivity.IBehavior.AssociatedObject"/> or a
+            target object.
+            </param>
+            <param name="parameter">The value of this parameter is determined by the caller.</param>
+            <returns>Returns the result of the action.</returns>
+            <remarks>
+            An example of parameter usage is EventTriggerBehavior, which passes the EventArgs as a
+            parameter to its actions.
+            </remarks>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerAction.Invoke(System.Object)">
+            <summary>
+            Invokes the specified parameter.
+            </summary>
+            <param name="parameter">The parameter.</param>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.TriggerBase`1">
+            <summary>
+            Trigger Base
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Reactive.Bindings.Interactivity.TriggerBase"/>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerBase`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.Interactivity.TriggerBase`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TriggerBase`1.AssociatedObject">
+            <summary>
+            Gets the associated object.
+            </summary>
+            <value>The associated object.</value>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.TriggerBase">
+            <summary>
+            </summary>
+            <seealso cref="T:Windows.UI.Xaml.DependencyObject"/>
+            <seealso cref="T:Microsoft.Xaml.Interactivity.IBehavior"/>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.TriggerBase.ActionsImplProperty">
+            <summary>
+            The actions implementation property
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.TriggerBase.AssociatedObjectChanged">
+            <summary>
+            The associated object changed
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TriggerBase.AssociatedObject">
+            <summary>
+            Gets the <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which the <seealso
+            cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> is attached.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TriggerBase.AssociatedType">
+            <summary>
+            Gets the type of the associated.
+            </summary>
+            <value>The type of the associated.</value>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerBase.Attach(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Attaches to the specified object.
+            </summary>
+            <param name="associatedObject">
+            The <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which the <seealso
+            cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> will be attached.
+            </param>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerBase.Detach">
+            <summary>
+            Detaches this instance from its associated object.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerBase.OnAttached">
+            <summary>
+            Called when [attached].
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerBase.OnDetaching">
+            <summary>
+            Called when [detaching].
+            </summary>
+        </member>
+        <member name="E:Reactive.Bindings.Interactivity.TriggerBase.PreviewInvoke">
+            <summary>
+            Occurs when [preview invoke].
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.TriggerBase.ActionsImpl">
+            <summary>
+            Actionsプロパティは、TriggerBehaviorのベースクラスにいる状態だと認識しないっぽいので 泣く泣くこれを継承したクラスで以下のようなコードを書くことで対応することに…。
+            <code>
+            public ActionCollection Actions { get { return tshi.ActionImpl; } }
+            </code>
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.TriggerBase.InvokeActions(System.Object)">
+            <summary>
+            Invokes the actions.
+            </summary>
+            <param name="parameter">The parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.EventToReactiveCommand">
+            <summary>
+            Converts EventArgs to object
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.EventToReactiveCommand.Command">
+            <summary>
+            Gets or sets the command.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.EventToReactiveCommand.CommandProperty">
+            <summary>
+            The command property
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.EventToReactiveCommand.IgnoreEventArgs">
+            <summary>
+            Ignore EventArgs. If value is false then uses Unit.Default.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.EventToReactiveCommand.Converters">
+            <summary>
+            set and get Value converter.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.EventToReactiveCommand.OnDetaching">
+            <summary>
+            Called when [detaching].
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.EventToReactiveCommand.Invoke(System.Object)">
+            <summary>
+            Invokes the specified parameter.
+            </summary>
+            <param name="parameter">The parameter.</param>
+        </member>
+        <member name="T:Reactive.Bindings.Interactivity.EventToReactiveProperty">
+            <summary>
+            Converts EventArgs to object
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.EventToReactiveProperty.ReactiveProperty">
+            <summary>
+            Gets or sets the reactive property.
+            </summary>
+            <value>The reactive property.</value>
+        </member>
+        <member name="F:Reactive.Bindings.Interactivity.EventToReactiveProperty.ReactivePropertyProperty">
+            <summary>
+            The reactive property property
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.EventToReactiveProperty.IgnoreEventArgs">
+            <summary>
+            Ignore EventArgs. If value is false then uses Unit.Default.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Interactivity.EventToReactiveProperty.Converters">
+            <summary>
+            set and get Value converter.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.EventToReactiveProperty.OnDetaching">
+            <summary>
+            Called when [detaching].
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Interactivity.EventToReactiveProperty.Invoke(System.Object)">
+            <summary>
+            Invokes the specified parameter.
+            </summary>
+            <param name="parameter">The parameter.</param>
+        </member>
+        <member name="T:Reactive.Bindings.Extensions.DependencyObjectExtensions">
+            <summary>
+            DependencyObject extension methods.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.DependencyObjectExtensions.ObserveDependencyProperty``1(``0,Windows.UI.Xaml.DependencyProperty)">
+            <summary>
+            Observe DependencyProperty
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="self"></param>
+            <param name="dp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.DependencyObjectExtensions.ToReadOnlyReactiveProperty``1(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyProperty,Reactive.Bindings.ReactivePropertyMode,System.Reactive.Concurrency.IScheduler)">
+            <summary>
+            Create ReadOnlyReactiveProperty from DependencyObject
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.DependencyObjectExtensions.ToReactiveProperty``1(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyProperty,System.Reactive.Concurrency.IScheduler,Reactive.Bindings.ReactivePropertyMode)">
+            <summary>
+            Create ReactiveProperty from DependencyObject
+            </summary>
+        </member>
+    </members>
+</doc>
