@@ -81,9 +81,9 @@ namespace ReadTags.Models.ServerSideModels {
                 if (statuscheck == "1") {
                     // 状態を返して終了
                     if (PROCESSING) {
-                        SendResult("Processing..");
+                        this.SendResult("Processing..");
                     } else {
-                        SendResult("Ready");
+                        this.SendResult("Ready");
                     }
                     return;
                 }
@@ -106,10 +106,10 @@ namespace ReadTags.Models.ServerSideModels {
 
                 if (flgFirst) {
                     // 初回読み取り
-                    bool ans = FirstRead();
+                    bool ans = this.FirstRead();
                     // DB（ファイル）読み込み
                     TAGS_DB = new List<TagsDB>();
-                    TAGS_DB = ReadDB();
+                    TAGS_DB = this.ReadDB();
                     ORI_TAG = "";
                 }
                 // オリコンタグが取得出来ない場合は前回オリコンタグ
@@ -121,13 +121,13 @@ namespace ReadTags.Models.ServerSideModels {
 
                 // 前回オリコンタグもない場合はエラー
                 if (string.IsNullOrEmpty(oriTag)) {
-                    SendResult("NG", "ERROR：パラメータなし");
+                    this.SendResult("NG", "ERROR：パラメータなし");
                     return;
                 }
 
 
                 // タグ読み取り、マッチング
-                ReadTag(oriTag, tag);
+                this.ReadTag(oriTag, tag);
 
                 // 待機後、処理中フラグクリア
 //                Task<bool> task = Task.Run(() =>
@@ -144,18 +144,16 @@ namespace ReadTags.Models.ServerSideModels {
                     }
                 });
 
-                //               end = !task.Result;
-
-//OverList.ForEach(Console.WriteLine);
+                //OverList.ForEach(Console.WriteLine);
                 // Response
-                SendResult("Processing..", "Processed:  OriconTag: " + oriTag + ", Tag: " + tag);
+                this.SendResult("Processing..", "Processed:  OriconTag: " + oriTag + ", Tag: " + tag);
 
             }
             catch (Exception ex) {
                 msg = "ERROR: " + ex.Message;
                 TAGS_LIST = new List<TagsList>();
                 // Response
-                SendResult("NG", msg);
+                this.SendResult("NG", msg);
             }
 
         }
@@ -215,11 +213,6 @@ namespace ReadTags.Models.ServerSideModels {
             // ソート
             TAGS_LIST = TAGS_LIST.OrderBy(x => x.OriTag).ThenBy(x => x.Tags).ToList();
 
-
-            //            var tags = TAGS_LIST
-            //              .AsEnumerable().Select(x => x.Tags).ToArray();
-
-
             // マッチング
             // 過剰チェック
             foreach (TagsList taglist in TAGS_LIST) {
@@ -248,7 +241,7 @@ namespace ReadTags.Models.ServerSideModels {
 
             // 一致チェック
 
-            // DBのオリコンタグのみ取得（グループ化）
+            // DBのオリコンタグのみ取得しグループ化
             string[] dbOritags = TAGS_DB.GroupBy(x => x.OriTag).Select(x => x.Key).ToArray();
 
             bool matchFlg = false;
